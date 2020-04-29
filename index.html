@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><span>Logo</span></div>
+      <button class="burger-button" id="openMenu"></button>
+      <nav id="headerMenu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="button">Gift Finder</a>
+    </header>
+    <script>
+      const btn = document.getElementById("openMenu");
+      const menu = document.getElementById("headerMenu");
+
+      btn.addEventListener("click", (e) => {
+        menu.classList.toggle("open");
+        btn.classList.toggle("opened");
+      });
+    </script>
+  </body>
+</html>

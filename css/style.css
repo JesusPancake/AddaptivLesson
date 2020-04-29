@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo span {
+  font-family: "Homemade Apple", cursive;
+}
+
+header nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: white;
+  transition: left 0.3s ease-in-out;
+}
+
+header nav.open {
+  left: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+header nav ul {
+  width: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  color: #f7941e;
+}
+
+header .button {
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #f7941e;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f7941e;
+  border-radius: 5px;
+}
+
+.button.button_primary {
+  color: white;
+  background-color: #f7941e;
+}
+
+.burger-button {
+  position: absolute;
+  border: none;
+  height: 2px;
+  width: 32px;
+  background-color: #000;
+  top: 56px;
+  left: 16px;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+}
+
+.burger-button:before,
+.burger-button:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 32px;
+  background-color: #000;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.burger-button:before {
+  top: -8px;
+}
+
+.burger-button:after {
+  bottom: -8px;
+}
+
+.burger-button.opened {
+  transform: rotate(45deg);
+}
+
+.burger-button.opened:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.burger-button.opened:before {
+  top: 0;
+}
+
+@media screen and (min-width: 425px) {
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    padding: 40px 40px;
+  }
+
+  header .logo {
+    width: auto;
+    margin: 0;
+  }
+
+  header .button {
+    margin: 0;
+  }
+
+  header nav {
+    display: block;
+    position: static;
+    width: auto;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    width: max-content;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 40px 80px;
+  }
+}
+
+/* 
+
+.blocks {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.block {
+  border: 1px solid white;
+  background-color: red;
+  height: 250px;
+}
+
+
+@media screen and (min-width: 420px) {
+    .blocks {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    .block {
+      background-color: green;
+      height: 250px;
+      width: 49%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .blocks {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    .block {
+      background-color: green;
+      height: 250px;
+      width: 32%;
+    }
+  } */
