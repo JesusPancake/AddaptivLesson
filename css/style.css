@@ -70,6 +70,7 @@ header .button {
   text-transform: uppercase;
   text-decoration: none;
   color: #f7941e;
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -122,7 +123,82 @@ header .button {
   top: 0;
 }
 
-@media screen and (min-width: 425px) {
+section .gift-text {
+  background: #f1f1f2;
+}
+
+section .work-text {
+  background: #f1f1f2;
+}
+
+section img {
+  display: flex;
+  width: 100%;
+}
+
+section .button {
+  background-color: #f1f1f2;
+}
+
+@media screen and (min-width: 320px) {
+  section .main-text {
+    font-size: 33px;
+    line-height: 35px;
+    max-width: 226px;
+    padding-bottom: 16px;
+  }
+
+  section .second-text {
+    font-size: 16px;
+    line-height: 140.62%;
+    max-width: 222px;
+    padding-bottom: 22px;
+  }
+
+  section .gift-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .gift-text {
+    height: 450px;
+  }
+
+  .work-text {
+    height: 450px;
+  }
+
+  section .main-text2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-bottom: 10px;
+    padding-right: 75px;
+  }
+
+  section .second-text2 {
+    font-size: 17px;
+    line-height: 130.62%;
+    max-width: 290px;
+    text-align: justify;
+    padding-bottom: 35px;
+  }
+
+  section .work-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .buttonbot {
+    padding-right: 125px;
+  }
+
+  .buttontop {
+    padding-right: 45px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -155,50 +231,252 @@ header .button {
   header nav ul li {
     width: max-content;
   }
+
+  section .main-text {
+    font-size: 56px;
+    line-height: 69px;
+    max-width: 433px;
+    padding-bottom: 36px;
+  }
+
+  section .second-text {
+    font-size: 20px;
+    line-height: 140.62%;
+    max-width: 422px;
+    padding-bottom: 52px;
+  }
+
+  section .gift-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 154px 155px 135px 162px;
+  }
+
+  .gift-text {
+    height: 719px;
+  }
+
+  .work-text {
+    height: 719px;
+  }
+
+  section .main-text2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-bottom: 23px;
+    padding-right: 234px;
+  }
+
+  section .second-text2 {
+    font-size: 20px;
+    line-height: 140.62%;
+    max-width: 447px;
+    text-align: justify;
+    padding-bottom: 35px;
+  }
+
+  section .work-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 154px 155px 135px 162px;
+  }
+
+  .buttonbot {
+    padding-right: 288px;
+  }
+
+  .buttontop {
+    padding-right: 247px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   header {
     padding: 40px 80px;
   }
-}
-
-/* 
-
-.blocks {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.block {
-  border: 1px solid white;
-  background-color: red;
-  height: 250px;
-}
-
-
-@media screen and (min-width: 420px) {
-    .blocks {
-      display: flex;
-      flex-flow: row wrap;
-    }
-  
-    .block {
-      background-color: green;
-      height: 250px;
-      width: 49%;
-    }
+  section {
+    background: #f1f1f2;
   }
-  
-  @media screen and (min-width: 768px) {
-    .blocks {
-      display: flex;
-      flex-flow: row wrap;
-    }
-  
-    .block {
-      background-color: green;
-      height: 250px;
-      width: 32%;
-    }
-  } */
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section img {
+    display: flex;
+    width: 420px;
+    height: 421px;
+  }
+
+  section .content {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section .content2 {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section .main-text {
+    font-size: 37px;
+    line-height: 40px;
+    max-width: 335px;
+    padding-bottom: 16px;
+  }
+
+  section .second-text {
+    font-size: 20px;
+    line-height: 140.62%;
+    max-width: 339px;
+    padding-bottom: 28px;
+  }
+
+  section .gift-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .gift-text {
+    width: 420px;
+    height: 421px;
+  }
+
+  .work-text {
+    width: 420px;
+    height: 421px;
+  }
+
+  section .main-text2 {
+    font-size: 37px;
+    line-height: 40px;
+    max-width: 335px;
+    padding-right: 84px;
+    padding-bottom: 16px;
+  }
+
+  section .second-text2 {
+    font-size: 16px;
+    line-height: 140.62%;
+    max-width: 339px;
+    text-align: justify;
+    padding-bottom: 35px;
+  }
+
+  section .work-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .buttonbot {
+    padding-right: 180px;
+  }
+
+  .buttontop {
+    padding-right: 160px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section {
+    background: #f1f1f2;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .content {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section .content2 {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section .main-text {
+    font-size: 56px;
+    line-height: 69px;
+    max-width: 433px;
+    padding-bottom: 36px;
+  }
+
+  section .second-text {
+    font-size: 20px;
+    line-height: 140.62%;
+    max-width: 422px;
+    padding-bottom: 52px;
+  }
+
+  section .gift-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 154px 155px 135px 162px;
+  }
+
+  .gift-text {
+    width: 721px;
+    height: 719px;
+  }
+
+  .work-text {
+    width: 721px;
+    height: 719px;
+  }
+
+  section .main-text2 {
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-bottom: 23px;
+    padding-right: 234px;
+  }
+
+  section .second-text2 {
+    font-size: 20px;
+    line-height: 140.62%;
+    max-width: 447px;
+    text-align: justify;
+    padding-bottom: 35px;
+  }
+
+  section .work-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 154px 155px 135px 162px;
+  }
+
+  .buttonbot {
+    padding-right: 235px;
+  }
+
+  .buttontop {
+    padding-right: 220px;
+  }
+}
