@@ -123,16 +123,15 @@ header .button {
   top: 0;
 }
 
-section .gift-text {
+section {
   background: #f1f1f2;
 }
 
-section .work-text {
-  background: #f1f1f2;
+.about {
+  background-color: #f1f1f2;
 }
 
 section img {
-  display: flex;
   width: 100%;
 }
 
@@ -140,68 +139,36 @@ section .button {
   background-color: #f1f1f2;
 }
 
-@media screen and (min-width: 320px) {
-  section .main-text {
-    font-size: 33px;
-    line-height: 35px;
-    max-width: 226px;
-    padding-bottom: 16px;
-  }
-
-  section .second-text {
-    font-size: 16px;
-    line-height: 140.62%;
-    max-width: 222px;
-    padding-bottom: 22px;
-  }
-
-  section .gift-text {
+@media screen and (min-width: 320px) and (max-width: 719px) {
+  .about {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
   }
 
   .gift-text {
-    height: 450px;
-  }
-
-  .work-text {
-    height: 450px;
-  }
-
-  section .main-text2 {
-    font-size: 32px;
-    line-height: 140.62%;
-    padding-bottom: 10px;
-    padding-right: 75px;
-  }
-
-  section .second-text2 {
-    font-size: 17px;
-    line-height: 130.62%;
-    max-width: 290px;
-    text-align: justify;
-    padding-bottom: 35px;
-  }
-
-  section .work-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
+    padding: 30px 30px;
   }
 
-  .buttonbot {
-    padding-right: 125px;
+  .work-text {
+    text-align: center;
+    padding: 30px 30px;
   }
 
-  .buttontop {
-    padding-right: 45px;
+  .gift-text p {
+    margin: 30px auto;
+  }
+  .work-text p {
+    text-align: justify;
+    margin: 30px auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   header {
     flex-wrap: nowrap;
     padding: 40px 40px;
@@ -228,69 +195,78 @@ section .button {
     display: flex;
   }
 
+  .burger-button {
+    display: none;
+  }
+
   header nav ul li {
     width: max-content;
   }
-
-  section .main-text {
-    font-size: 56px;
-    line-height: 69px;
-    max-width: 433px;
-    padding-bottom: 36px;
+  section {
+    background: #f1f1f2;
   }
 
-  section .second-text {
-    font-size: 20px;
-    line-height: 140.62%;
-    max-width: 422px;
-    padding-bottom: 52px;
-  }
-
-  section .gift-text {
+  .about {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    padding: 154px 155px 135px 162px;
+  }
+  section img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .content {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -7px;
+  }
+
+  section .content-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .couple {
+    max-width: 50%;
+  }
+
+  .thanks {
+    max-width: 50%;
   }
 
   .gift-text {
-    height: 719px;
-  }
-
-  .work-text {
-    height: 719px;
-  }
-
-  section .main-text2 {
-    font-size: 32px;
-    line-height: 140.62%;
-    padding-bottom: 23px;
-    padding-right: 234px;
-  }
-
-  section .second-text2 {
-    font-size: 20px;
-    line-height: 140.62%;
-    max-width: 447px;
-    text-align: justify;
-    padding-bottom: 35px;
-  }
-
-  section .work-text {
+    width: 235px;
+    margin-left: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 154px 155px 135px 162px;
   }
 
-  .buttonbot {
-    padding-right: 288px;
+  .gift-text h1 {
+    font-size: 30px;
   }
 
-  .buttontop {
-    padding-right: 247px;
+  .gift-text p {
+    margin: 20px 0px;
+    font-size: 14px;
+  }
+
+  .work-text {
+    width: 310px;
+    margin-right: 35px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .work-text p {
+    margin: 25px 0px;
+    font-size: 14px;
   }
 }
 
@@ -309,86 +285,62 @@ section .button {
   }
   section img {
     display: flex;
-    width: 420px;
-    height: 421px;
+    width: 100%;
+    height: 100%;
   }
 
   section .content {
-    max-width: 1440px;
+    width: 992px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 -7px;
   }
 
-  section .content2 {
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
+  section .content-reverse {
+    flex-direction: row-reverse;
   }
 
-  section .main-text {
-    font-size: 37px;
-    line-height: 40px;
-    max-width: 335px;
-    padding-bottom: 16px;
+  .couple {
+    max-width: 50%;
   }
 
-  section .second-text {
-    font-size: 20px;
-    line-height: 140.62%;
-    max-width: 339px;
-    padding-bottom: 28px;
-  }
-
-  section .gift-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px;
+  .thanks {
+    max-width: 50%;
   }
 
   .gift-text {
-    width: 420px;
-    height: 421px;
-  }
-
-  .work-text {
-    width: 420px;
-    height: 421px;
-  }
-
-  section .main-text2 {
-    font-size: 37px;
-    line-height: 40px;
-    max-width: 335px;
-    padding-right: 84px;
-    padding-bottom: 16px;
-  }
-
-  section .second-text2 {
-    font-size: 16px;
-    line-height: 140.62%;
-    max-width: 339px;
-    text-align: justify;
-    padding-bottom: 35px;
-  }
-
-  section .work-text {
+    width: 335px;
+    margin-left: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px;
   }
 
-  .buttonbot {
-    padding-right: 180px;
+  .gift-text h1 {
+    font-size: 35px;
   }
 
-  .buttontop {
-    padding-right: 160px;
+  .gift-text p {
+    margin: 20px 0px;
+    font-size: 17px;
+  }
+
+  .work-text {
+    width: 340px;
+    margin-right: 76px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .work-text p {
+    margin: 30px 0px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   section {
     background: #f1f1f2;
@@ -406,77 +358,40 @@ section .button {
   }
 
   section .content {
-    max-width: 1440px;
+    width: 1440px;
     display: flex;
-    justify-content: center;
-  }
-
-  section .content2 {
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-  }
-
-  section .main-text {
-    font-size: 56px;
-    line-height: 69px;
-    max-width: 433px;
-    padding-bottom: 36px;
-  }
-
-  section .second-text {
-    font-size: 20px;
-    line-height: 140.62%;
-    max-width: 422px;
-    padding-bottom: 52px;
+    justify-content: space-between;
+    margin: 0 -7px;
   }
 
   section .gift-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 154px 155px 135px 162px;
+    margin-left: 160px;
+    max-width: 400px;
   }
 
-  .gift-text {
-    width: 721px;
-    height: 719px;
+  .gift-text h1 {
+    font-size: 48px;
+    line-height: 69px;
+    margin-bottom: 36px;
+  }
+
+  .gift-text p {
+    font-size: 20px;
+    line-height: 140.62%;
+    margin-bottom: 52px;
   }
 
   .work-text {
-    width: 721px;
-    height: 719px;
-  }
-
-  section .main-text2 {
-    font-size: 32px;
-    line-height: 140.62%;
-    padding-bottom: 23px;
-    padding-right: 234px;
-  }
-
-  section .second-text2 {
-    font-size: 20px;
-    line-height: 140.62%;
-    max-width: 447px;
-    text-align: justify;
-    padding-bottom: 35px;
-  }
-
-  section .work-text {
+    max-width: 380px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 154px 155px 135px 162px;
+    text-align: justify;
+    margin-right: 160px;
   }
 
-  .buttonbot {
-    padding-right: 235px;
-  }
-
-  .buttontop {
-    padding-right: 220px;
+  .work-text p {
+    margin: 36px auto;
   }
 }
